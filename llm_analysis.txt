@@ -1,0 +1,85 @@
+ENGINEERED PROMPT
+=======================================================
+
+You are a building sustainability analyst.
+
+Analyze the following building-level Digital Twin simulation.
+
+BUILDING:
+Panther_education_Vincent
+Building type: Education / Classroom
+
+BASELINE:
+Average predicted electricity demand: 124.33
+
+SELECTED SCENARIO:
+Scenario: Efficiency +25%
+Scenario type: Efficiency
+Average predicted electricity demand: 93.25
+Demand savings relative to baseline: 25.00%
+Impact category: High Positive Impact
+Sustainability heuristic score: 100.0/100
+Scenario status: Assumption-Based Simulation
+
+TASK:
+1. Explain the scenario's impact on predicted electricity demand.
+2. Compare the scenario with the baseline.
+3. Explain the meaning of the sustainability heuristic score.
+4. Give one practical recommendation.
+
+CONSTRAINTS:
+- Use only the supplied numerical values.
+- Do not invent cost, carbon, or occupancy measurements.
+- Do not claim simulated savings are measured real-world savings.
+- Explain that the sustainability score is a heuristic.
+- Clearly distinguish simulation assumptions from model predictions.
+
+
+
+NEXUS - BUILDING ENERGY SCENARIO ANALYSIS
+========================================
+
+BUILDING
+--------
+Panther_education_Vincent
+Type: Education / Classroom
+
+BASELINE
+--------
+Average predicted demand: 124.33
+
+SELECTED SCENARIO
+-----------------
+Scenario: Efficiency +25%
+Scenario type: Efficiency
+Average predicted demand: 93.25
+Simulated demand savings: 25.00%
+
+SCENARIO IMPACT
+---------------
+The Efficiency +25% scenario reduces the average predicted electricity demand from 124.33 to 93.25. This represents a simulated demand reduction of 25.00% compared with the baseline.
+
+IMPACT CATEGORY
+---------------
+High Positive Impact
+
+SUSTAINABILITY HEURISTIC SCORE
+------------------------------
+100.0/100
+
+The score is a heuristic decision-support indicator,
+not an independently measured sustainability rating.
+
+RECOMMENDATION
+--------------
+Evaluate practical energy-efficiency measures such as efficient lighting, cooling-system optimization, and equipment upgrades. Actual savings should be measured before confirming the intervention's effectiveness.
+
+SCENARIO LIMITATIONS
+--------------------
+Scenario status: Assumption-Based Simulation
+
+The reported reduction is based on the scenario simulation
+and its stated assumptions. It is not verified real-world
+energy savings.
+
+No cost, carbon, or occupancy measurements are inferred.

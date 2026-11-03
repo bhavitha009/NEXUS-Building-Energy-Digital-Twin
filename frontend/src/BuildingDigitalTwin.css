@@ -1,0 +1,403 @@
+.digital-twin-page {
+  width: 100%;
+}
+
+.twin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border: 1px solid #e5eaf1;
+  border-radius: 12px 12px 0 0;
+  padding: 22px 25px;
+}
+
+.twin-header h2 {
+  margin: 0;
+  color: #17243a;
+  font-size: 20px;
+}
+
+.twin-header p {
+  color: #7b8798;
+  font-size: 12px;
+  margin: 7px 0 0;
+}
+
+.twin-tabs {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #f0f3f8;
+}
+
+.twin-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 0;
+  padding: 11px 15px;
+  border-radius: 8px;
+  background: transparent;
+  color: #536277;
+  font-size: 12px;
+}
+
+.twin-tabs button.selected {
+  background: white;
+  color: #2775a9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+}
+
+.twin-stage {
+  position: relative;
+  min-height: 530px;
+  overflow: hidden;
+  background: #eaf1f8;
+  border: 1px solid #e2e9f1;
+  border-top: 0;
+}
+
+.three-building-canvas {
+  width: 100%;
+  height: 530px;
+  cursor: grab;
+}
+
+.three-building-canvas:active {
+  cursor: grabbing;
+}
+
+.three-building-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.twin-status,
+.twin-floor-info {
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border: 1px solid #e2e8ef;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(35, 55, 80, 0.07);
+  padding: 13px 16px;
+  pointer-events: none;
+}
+
+.twin-status {
+  top: 18px;
+  left: 18px;
+  color: #197e76;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.twin-status .online-dot {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.twin-status small {
+  display: block;
+  margin: 5px 0 0 16px;
+  color: #7b8798;
+  font-weight: 400;
+}
+
+.twin-floor-info {
+  top: 18px;
+  right: 18px;
+  min-width: 180px;
+}
+
+.twin-floor-info strong {
+  color: #1d2d43;
+  font-size: 14px;
+}
+
+.twin-floor-info p,
+.twin-floor-info small {
+  display: block;
+  color: #748195;
+  font-size: 11px;
+  margin: 7px 0 0;
+}
+
+.twin-controls-hint {
+  position: absolute;
+  z-index: 2;
+  bottom: 17px;
+  left: 18px;
+  display: flex;
+  gap: 16px;
+  padding: 12px 15px;
+  background: white;
+  border: 1px solid #e2e8ef;
+  border-radius: 9px;
+  color: #58667a;
+  font-size: 11px;
+  pointer-events: none;
+}
+
+.twin-controls-hint span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.twin-energy-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5eaf1;
+  border-radius: 0 0 12px 12px;
+}
+
+.twin-energy-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.twin-energy-footer span,
+.energy-total span {
+  font-size: 10px;
+  color: #8490a1;
+  letter-spacing: 1px;
+}
+
+.twin-energy-footer strong {
+  font-size: 19px;
+  color: #236c99;
+}
+
+.twin-energy-footer small {
+  font-size: 10px;
+  color: #8c98a7;
+}
+
+.energy-map-content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+.energy-map-content h2 {
+  color: #203149;
+  font-size: 21px;
+}
+
+.energy-map-content > p {
+  color: #7b8798;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.energy-total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 22px;
+  margin: 25px 0;
+  border-radius: 12px;
+  border: 1px solid #e2e8ef;
+}
+
+.energy-total strong {
+  font-size: 32px;
+  color: #247da8;
+}
+
+.energy-total small {
+  color: #8793a2;
+  font-size: 10px;
+}
+
+.energy-building-map {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.energy-floor,
+.zone-button {
+  border: 1px solid #dfe7ef;
+  border-radius: 9px;
+  background: white;
+  padding: 16px;
+  cursor: pointer;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.energy-floor {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.energy-floor span:first-child {
+  color: #263b53;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.energy-floor span:last-child {
+  color: #8b96a5;
+  font-size: 10px;
+}
+
+.energy-floor:hover,
+.zone-button:hover {
+  border-color: #38a9b4;
+}
+
+.energy-floor.active,
+.zone-button.active {
+  border-color: #38a9b4;
+  background: #eaf8f7;
+}
+
+.twin-disclaimer {
+  margin-top: 22px;
+  line-height: 1.7;
+}
+
+.zone-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.zone-button {
+  font-size: 12px;
+  color: #52647a;
+}
+
+.selected-zone {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  border: 1px solid #e2e8ef;
+  border-radius: 12px;
+  padding: 25px;
+  color: #3686b8;
+}
+
+.selected-zone span {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #8490a1;
+}
+
+.selected-zone h3 {
+  color: #263b53;
+  margin: 6px 0;
+}
+
+.selected-zone p {
+  color: #8490a1;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.zone-data-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 9px;
+  background: #f1f6fc;
+  color: #477fbd;
+}
+
+.zone-data-note svg {
+  flex-shrink: 0;
+}
+
+.zone-data-note p {
+  color: #657b94;
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.twin-global-disclaimer {
+  color: #8c98a7;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 13px;
+}
+
+@media (max-width: 760px) {
+  .twin-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .twin-tabs {
+    width: 100%;
+  }
+
+  .twin-tabs button {
+    flex: 1;
+    padding: 10px 5px;
+  }
+
+  .twin-stage {
+    min-height: 390px;
+  }
+
+  .three-building-canvas {
+    height: 390px;
+  }
+
+  .twin-floor-info {
+    top: auto;
+    bottom: 65px;
+    right: 10px;
+    min-width: 140px;
+  }
+
+  .twin-energy-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .energy-map-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .twin-status {
+    top: 8px;
+    left: 8px;
+    padding: 9px;
+    font-size: 9px;
+  }
+
+  .twin-floor-info {
+    padding: 9px;
+    min-width: 120px;
+  }
+
+  .twin-controls-hint {
+    left: 8px;
+    bottom: 8px;
+    gap: 9px;
+    padding: 9px;
+    font-size: 9px;
+  }
+}

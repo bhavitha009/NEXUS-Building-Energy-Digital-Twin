@@ -1,0 +1,30 @@
+{
+    "model": "Random Forest Regressor",
+    "selected_feature_group": "All 18 Features",
+    "number_of_features": 18,
+    "number_of_trees": 100,
+    "random_state": 42,
+    "training_samples": 14635,
+    "evaluation_samples": 2583,
+    "prediction_horizon": "One-hour-ahead rolling prediction",
+    "features": [
+        "airTemperature",
+        "dewTemperature",
+        "precipDepth1HR",
+        "seaLvlPressure",
+        "windSpeed",
+        "hour",
+        "day_of_week",
+        "month",
+        "is_weekend",
+        "hour_sin",
+        "hour_cos",
+        "day_sin",
+        "day_cos",
+        "lag_1h",
+        "lag_24h",
+        "lag_168h",
+        "windDirection_sin",
+        "windDirection_cos"
+    ]
+}

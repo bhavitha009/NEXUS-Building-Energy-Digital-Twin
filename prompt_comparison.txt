@@ -1,0 +1,69 @@
+
+PROMPT 1 - BASIC
+-------------------------------------------------------
+
+Explain this building electricity scenario.
+
+Baseline demand: 124.33
+Scenario demand: 105.68
+Demand savings: 15.00%
+
+
+
+PROMPT 2 - STRUCTURED
+-------------------------------------------------------
+
+Analyze the following building energy scenario.
+
+Building: Panther_education_Vincent
+
+Baseline average demand: 124.33
+
+Scenario: Efficiency +15%
+Scenario average demand: 105.68
+Demand savings compared with baseline: 15.00%
+
+Explain:
+1. The impact of the scenario.
+2. Whether predicted energy performance improves.
+3. One practical sustainability recommendation.
+
+
+
+PROMPT 3 - ENGINEERED
+-------------------------------------------------------
+
+ROLE:
+You are a building sustainability analyst.
+
+CONTEXT:
+Analyze a building-level Digital Twin simulation
+for Panther_education_Vincent, an education building.
+
+BASELINE:
+Average predicted electricity demand = 124.33
+
+SCENARIO:
+Intervention = Efficiency +15%
+Average predicted electricity demand = 105.68
+Demand savings relative to baseline = 15.00%
+Sustainability heuristic score = 80.0/100
+
+TASKS:
+1. Explain the scenario's impact.
+2. Compare predicted demand with the baseline.
+3. Explain the sustainability score.
+4. Give ONE practical sustainability recommendation.
+5. Explain why the recommendation is useful.
+
+CONSTRAINTS:
+- Use only the supplied values.
+- Do not invent cost values.
+- Do not invent carbon emission values.
+- Do not invent occupancy measurements.
+- Do not introduce unsupported numerical values.
+- Clearly distinguish simulation assumptions from measured results.
+- Explain that the sustainability score is heuristic.
+- Do not claim that simulated savings are verified real-world savings.
+
+

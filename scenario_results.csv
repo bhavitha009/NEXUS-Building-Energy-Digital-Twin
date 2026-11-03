@@ -1,0 +1,16 @@
+Scenario,Average_Demand,Change_From_Baseline_Percent,Scenario_Type,Assumption
+Baseline,124.32845569729353,0.0,Reference,Original Random Forest model predictions
+Efficiency +5%,118.11203291242884,-5.000000000000011,Efficiency,Assumed proportional electricity demand reduction of 5%
+Efficiency +10%,111.89561012756417,-10.00000000000001,Efficiency,Assumed proportional electricity demand reduction of 10%
+Efficiency +15%,105.67918734269949,-15.00000000000001,Efficiency,Assumed proportional electricity demand reduction of 15%
+Efficiency +20%,99.46276455783483,-20.0,Efficiency,Assumed proportional electricity demand reduction of 20%
+Efficiency +25%,93.24634177297013,-25.00000000000002,Efficiency,Assumed proportional electricity demand reduction of 25%
+After-Hours Reduction 5%,122.96474661987455,-1.096859982512173,Operating Hours,Assumed 5% demand reduction during hours 22:00-04:59
+After-Hours Reduction 10%,121.60103754245556,-2.193719965024346,Operating Hours,Assumed 10% demand reduction during hours 22:00-04:59
+After-Hours Reduction 15%,120.2373284650366,-3.290579947536496,Operating Hours,Assumed 15% demand reduction during hours 22:00-04:59
+Peak Reduction 5%,123.21771366034963,-0.893393254757594,Peak Management,Assumed 5% reduction in top 10% baseline demand observations
+Peak Reduction 10%,122.10697162340574,-1.7867865095151765,Peak Management,Assumed 10% reduction in top 10% baseline demand observations
+Peak Reduction 15%,120.99622958646185,-2.680179764272759,Peak Management,Assumed 15% reduction in top 10% baseline demand observations
+Temperature +2C,124.2950342443954,-0.026881579692030772,Weather Sensitivity,Air temperature feature increased by 2 degrees C; other features held constant
+Temperature +4C,124.32459363114182,-0.0031063412877214286,Weather Sensitivity,Air temperature feature increased by 4 degrees C; other features held constant
+Combined Intervention,110.6682719578871,-10.987173984260949,Combined,Assumed 10% overall proportional demand reduction and an additional 5% after-hours reduction
